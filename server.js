@@ -5,6 +5,10 @@ app.get("/api/test", (req, res) => {
   res.send({ message: "Hello World" });
 });
 
+app.get("/", (req, res) => {
+  res.send({ message: "Working Fine" });
+});
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
