@@ -8,7 +8,7 @@ dotenv.config({
 let PORT = process.env.PORT;
 
 app.get("/api/test", (req, res) => {
-  res.send({ message: `Hello World ${PORT}` });
+  res.send({ message: `Hello Worlds ${PORT}` });
 });
 
 app.listen(PORT, () => {
